@@ -1,4 +1,4 @@
-import Ajv from 'ajv/dist/jtd'
+import Ajv, { JTDSchemaType } from 'ajv/dist/jtd.js'
 
 const ajv = new Ajv()
 
@@ -7,7 +7,7 @@ interface EvaluatorResponse {
   status: string
 }
 
-const schema = {
+const schema: JTDSchemaType<EvaluatorResponse> = {
   properties: {
     comment: { type: 'string' },
     status: { type: 'string' },
