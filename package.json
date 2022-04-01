@@ -1,0 +1,14 @@
+{
+  "name": "ajv-workspaces",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "apps/*"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "author": "Bernhard Rode <mail@bernhardrode.de>",
+  "license": "ISC"
+}
